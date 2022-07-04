@@ -1,0 +1,536 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "salvar el planeta",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "Fin del juego"
+                    ]
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hola",
+                        "como estás",
+                        "di hola mundo",
+                        "di hola",
+                        "hola mundo"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HowManyPlayersIntent",
+                    "slots": [
+                        {
+                            "name": "num_players",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{num_players}",
+                                "vamos a jugar {num_players}",
+                                "vamos a ser {num_players}",
+                                "seremos {num_players}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "participaremos {num_players} personas",
+                        "jugaremos {num_players} personas",
+                        "seremos {num_players} personas",
+                        "vamos a participar {num_players} personas",
+                        "vamos a jugar {num_players} personas",
+                        "vamos a ser {num_players} personas",
+                        "vamos a participar {num_players} equipos",
+                        "vamos a participar {num_players} jugadores",
+                        "participaremos {num_players}",
+                        "jugaremos {num_players}",
+                        "seremos {num_players}",
+                        "seremos {num_players} equipos",
+                        "seremos {num_players} jugadores",
+                        "vamos a jugar {num_players} equipos",
+                        "vamos a jugar {num_players} jugadores",
+                        "{num_players}"
+                    ]
+                },
+                {
+                    "name": "RegisterPlayersIntent",
+                    "slots": [
+                        {
+                            "name": "team_colour",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "Es {team_colour}",
+                        "Se llama {team_colour}",
+                        "El equipo es {team_colour}",
+                        "El equipo se llama {team_colour}",
+                        "El jugador es {team_colour}",
+                        "{team_colour}",
+                        "El jugador se llama {team_colour}",
+                        "El primer jugador se llama {team_colour}"
+                    ]
+                },
+                {
+                    "name": "CheckNumPlayersIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "QRSquareIntent",
+                    "slots": [
+                        {
+                            "name": "casilla",
+                            "type": "CASILLAS",
+                            "samples": [
+                                "{casilla}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "estoy en la casilla {casilla}",
+                        "he caído en la casilla {casilla}",
+                        "si he caido en la casilla {casilla}",
+                        "{casilla}"
+                    ]
+                },
+                {
+                    "name": "RandomGameTurnIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "PlayerResponseIntent",
+                    "slots": [
+                        {
+                            "name": "respuesta",
+                            "type": "AMAZON.SearchQuery"
+                        },
+                        {
+                            "name": "choosen_color",
+                            "type": "AMAZON.Color"
+                        },
+                        {
+                            "name": "choosen_stamp",
+                            "type": "STAMPS"
+                        }
+                    ],
+                    "samples": [
+                        "hemos respondido",
+                        "he respondido",
+                        "ya hemos respondido",
+                        "le robo el sello de {choosen_stamp}",
+                        "le quitamos {choosen_stamp}",
+                        "vamos a robar {choosen_stamp}",
+                        "robamos {choosen_stamp}",
+                        "el sello que robamos es de {choosen_stamp}",
+                        "voy a robar un sello de {choosen_stamp}",
+                        "he elegido el {choosen_color}",
+                        "hemos elegido el {choosen_color}",
+                        "hemos elegido el color {choosen_color}",
+                        "el color elegido es {choosen_color}",
+                        "he elegido el color {choosen_color}",
+                        "ya he respondido",
+                        "es correcta la respuesta",
+                        "La respuesta correcta es la {respuesta}"
+                    ]
+                },
+                {
+                    "name": "RepeatQuestionIntent",
+                    "slots": [],
+                    "samples": [
+                        "No he entendido la pregunta",
+                        "Puedes repetir la pregunta"
+                    ]
+                },
+                {
+                    "name": "MovePlayerIntent",
+                    "slots": [],
+                    "samples": [
+                        "ya he tirado",
+                        "ya he lanzado",
+                        "dado tirado",
+                        "ya he lanzado el dado",
+                        "ya he tirado el dado",
+                        " ya he tirado el dado donde debo ir"
+                    ]
+                },
+                {
+                    "name": "CheckTotalStampsIntent",
+                    "slots": [],
+                    "samples": [
+                        "he llegado a la meta"
+                    ]
+                },
+                {
+                    "name": "FinishGameIntent",
+                    "slots": [],
+                    "samples": [
+                        "Escaneo realizado",
+                        "Carta escaneada",
+                        "Mision escaneada",
+                        "Carta mision escaneada",
+                        "Ya he escaneado la carta",
+                        "Si he conseguido completar la carta",
+                        "No he conseguido completar la carta"
+                    ]
+                },
+                {
+                    "name": "RepeatDiceResultIntent",
+                    "slots": [],
+                    "samples": [
+                        "Cuánto he sacado",
+                        "Puedes repetir cuánto he sacado",
+                        "Puedes repetir cuánto he sacado en el dado",
+                        "Cuánto he sacado en el dado"
+                    ]
+                },
+                {
+                    "name": "RepeatSquareIntent",
+                    "slots": [],
+                    "samples": [
+                        "En qué casilla he caído",
+                        "Qué casilla has dicho",
+                        "A qué casilla voy ",
+                        "A qué casilla tengo que ir"
+                    ]
+                },
+                {
+                    "name": "GetQuestionOptionsIntent",
+                    "slots": [],
+                    "samples": [
+                        "Adelante con la pregunta",
+                        "Di la pregunta",
+                        "Cuál es la pregunta",
+                        "Dime la pregunta",
+                        "Cuáles son las respuestas",
+                        "Qué opciones hay",
+                        "Dime las opciones"
+                    ]
+                },
+                {
+                    "name": "RecoverGameIntent",
+                    "slots": [
+                        {
+                            "name": "want_to_recover",
+                            "type": "YesOrNo"
+                        }
+                    ],
+                    "samples": [
+                        "recupera la partida",
+                        "recupérala",
+                        "recuperar la partida",
+                        "recuperar partida"
+                    ]
+                },
+                {
+                    "name": "NewGameIntent",
+                    "slots": [],
+                    "samples": [
+                        "comenzar partida nueva",
+                        "empezar partida nueva",
+                        "jugar partida nueva",
+                        "jugar una partida nueva",
+                        "jugar una nueva",
+                        "vamos a empezar otra partida",
+                        "vamos a empezar una partida nueva",
+                        "vamos a comenzar otra partida",
+                        "vamos a comenzar una partida nueva",
+                        "vamos a iniciar otra partida",
+                        "vamos a iniciar una partida nueva",
+                        "vamos a jugar otra partida",
+                        "vamos a jugar una partida nueva",
+                        "iniciar partida",
+                        "iniciar otra partida",
+                        "iniciar partida nueva",
+                        "empezar otra",
+                        "comenzar otra",
+                        "empezar",
+                        "comenzar",
+                        "comenzar la partida",
+                        "empezar la partida",
+                        "empezar otra partida",
+                        "comienza una partida",
+                        "comenzar una partida",
+                        "comenzar otra partida",
+                        "partida nueva",
+                        "empieza una partida",
+                        "empieza una partida nueva",
+                        "comienza una partida nueva"
+                    ]
+                },
+                {
+                    "name": "RepeatGameCodeIntent",
+                    "slots": [],
+                    "samples": [
+                        "cual es el código de partida",
+                        "qué codigo tiene la partida",
+                        "esta que partida es",
+                        "cuál es la partida",
+                        "cuál es nuestra partida",
+                        "puedes repetir el código de la partida",
+                        "puedes decirnos el código de la partida",
+                        "puedes decirme el código de la partida",
+                        "cual es el código de la partida"
+                    ]
+                },
+                {
+                    "name": "RepeatPlayerTurnIntent",
+                    "slots": [],
+                    "samples": [
+                        "qué equipo va",
+                        "qué equipo tiene el turno",
+                        "a qué equipo le toca jugar",
+                        "qué jugador va ahora",
+                        "qué jugador tiene que jugar",
+                        "a quién le toca",
+                        "quién tiene el turno",
+                        "de quién es el turno",
+                        "a quién le toca jugar"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "CASILLAS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "misión"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "conocimiento"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "turno"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pierde turno"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "basura"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sorpresa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dante"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "monstruo"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "STAMPS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "bombilla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "basura"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "árbol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "reciclaje"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "planeta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gota"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bicicleta"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "YesOrNo",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "no",
+                                "synonyms": [
+                                    "no",
+                                    "no, no quiero",
+                                    "para nada",
+                                    "no gracias"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "si",
+                                "synonyms": [
+                                    "si quiero",
+                                    "si gracias",
+                                    "recupérala",
+                                    "perfecto",
+                                    "venga si",
+                                    "vale",
+                                    "por supuesto"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "HowManyPlayersIntent",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "num_players",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1011213269035.1439946711243"
+                            },
+                            "validations": [
+                                {
+                                    "type": "isLessThanOrEqualTo",
+                                    "prompt": "Slot.Validation.713140152343.812272335799.770360920107",
+                                    "value": "4"
+                                },
+                                {
+                                    "type": "isGreaterThan",
+                                    "prompt": "Slot.Validation.814000796079.1540101123461.262372982340",
+                                    "value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "RegisterPlayersIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "team_colour",
+                            "type": "AMAZON.Color",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "CheckNumPlayersIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": []
+                },
+                {
+                    "name": "QRSquareIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "casilla",
+                            "type": "CASILLAS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.320193359245.345528057268"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1011213269035.1439946711243",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Para comenzar a jugar es necesario saber cuántos participantes vais a ser."
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.713140152343.812272335799.770360920107",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "El número de jugadores o equipos debe ser como máximo cuatro. "
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.320193359245.345528057268",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Puedes decirme en qué casilla has caído, por favor?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.814000796079.1540101123461.262372982340",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Para poder jugar debe registrarse más de un participante."
+                    }
+                ]
+            }
+        ]
+    }
+}

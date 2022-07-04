@@ -1,0 +1,26 @@
+{
+  "name": "serverlessrepo-alexa-skil-alexaskillskitnodejstriv-g3pbhti2r3cq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.25",
+    "ask-sdk": "^2.11.0",
+    "ask-sdk-core": "^2.11.0",
+    "ask-sdk-dynamodb-persistence-adapter": "^2.11.0",
+    "ask-sdk-model": "^1.36.1",
+    "ask-sdk-s3-persistence-adapter": "^2.11.0",
+    "aws-sdk": "^2.970.0",
+    "easytimer.js": "^4.5.3",
+    "es6-promisify": "^7.0.0",
+    "https": "^1.0.0",
+    "i18next": "^20.4.0",
+    "i18next-sprintf-postprocessor": "^0.2.2",
+    "mysql": "^2.18.1"
+  }
+}
